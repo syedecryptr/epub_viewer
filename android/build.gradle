@@ -36,7 +36,7 @@ android {
 
 dependencies {
     //implementation "com.jideguru:folioreader:0.6.2"
-    implementation 'com.github.syedecryptr:Folioreader-Bookmark:0.0.1'
+    implementation 'com.github.syedecryptr:Folioreader-Bookmark:v0.0.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.8'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
 }
