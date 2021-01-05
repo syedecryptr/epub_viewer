@@ -9,7 +9,7 @@ class EpubLocator {
 
   EpubLocator({this.bookId, this.href, this.created, this.locations});
 
-  EpubLocator.fromJson(Map<String, dynamic> json) {
+  EpubLocator.fromJson(Map<dynamic, dynamic> json) {
     bookId = json['bookId'];
     href = json['href'];
     created = json['created'];
@@ -18,8 +18,8 @@ class EpubLocator {
         : null;
   }
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+  Map<dynamic, dynamic> toJson() {
+    final Map<dynamic, dynamic> data = new Map<dynamic, dynamic>();
     data['bookId'] = this.bookId;
     data['href'] = this.href;
     data['created'] = this.created;
@@ -36,12 +36,12 @@ class Locations {
 
   Locations({this.cfi});
 
-  Locations.fromJson(Map<String, dynamic> json) {
+  Locations.fromJson(Map<dynamic, dynamic> json) {
     cfi = json['cfi'];
   }
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+  Map<dynamic, dynamic> toJson() {
+    final Map<dynamic, dynamic> data = new Map<dynamic, dynamic>();
     data['cfi'] = this.cfi;
     return data;
   }
